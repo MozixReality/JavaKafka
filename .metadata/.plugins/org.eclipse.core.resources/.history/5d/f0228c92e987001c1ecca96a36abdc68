@@ -1,0 +1,12 @@
+package kafka;
+
+import org.apache.kafka.clients.*;
+
+import java.util.Properties;
+
+public class Producer {
+	public Producer() {
+		Properties properties = new Properties();
+		
+	}
+}

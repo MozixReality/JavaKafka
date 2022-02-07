@@ -1,0 +1,22 @@
+package kafka;
+
+import org.apache.kafka.clients.consumer.*;
+import org.apache.kafka.common.serialization.StringDeserializer;
+import org.slf4j.LoggerFactory;
+import java.util.Properties;
+
+public class Consumer {
+	public static void main(String[] args) {
+		final Logger logger = LoggerFactory.getLogger(Consumer.class);
+		
+		final String bootStrapServers = "127.0.0.1:9092";
+		final String consumerGroupID = "java-group-consumer";
+		
+		Properties p = new Properties();
+		p.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootStrapServers);
+		p.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+		p.setProperty();
+		p.setProperty();
+		p.setProperty();
+	}
+}

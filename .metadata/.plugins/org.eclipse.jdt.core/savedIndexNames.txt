@@ -1,0 +1,27 @@
+INDEX VERSION 1.131+/home/mozixreality/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+2788010738.index
+657776992.index
+871054829.index
+668093614.index
+184086106.index
+1365163126.index
+319700186.index
+1409586107.index
+3194123399.index
+3668350026.index
+646308851.index
+935098327.index
+530394265.index
+1242057401.index
+4173136.index
+3157619563.index
+1865797976.index
+308079364.index
+3170255615.index
+1162904733.index
+3811470870.index
+2629987750.index
+3088263046.index
+2653026083.index
+3421383482.index
+1069707335.index

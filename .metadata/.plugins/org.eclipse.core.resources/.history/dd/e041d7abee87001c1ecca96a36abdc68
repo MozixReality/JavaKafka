@@ -1,0 +1,19 @@
+package kafka;
+
+import org.slf4j.LoggerFactory;
+
+public class Consumer {
+	public static void main(String[] args) {
+		final Logger logger = LoggerFactory.getLogger(Consumer.class);
+		
+		final String bootStrapServers = "127.0.0.1:9092";
+		final String consumerGroupID = "java-group-consumer";
+		
+		Properties p = new Properties();
+		p.setProperty();
+		p.setProperty();
+		p.setProperty();
+		p.setProperty();
+		p.setProperty();
+	}
+}

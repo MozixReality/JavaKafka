@@ -1,0 +1,33 @@
+package kafka;
+
+import org.apache.kafka.clients.producer.*;
+import org.apache.kafka.common.serialization.StringSerializer;
+import org.slf4j.LoggerFactory;
+
+import java.util.Properties;
+
+public class Producer {
+	public static void main(String[] args) {
+		final Logger logger = LoggerFactory.getLogger(Producer.class);
+		
+		Properties properties = new Properties();
+		properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+		properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+		properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+	
+		final kafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
+	}
+	
+	public Producer() {
+		Properties properties = new Properties();
+		properties.put("bootstrap.servers", "localhost:9092");
+		properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+		properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+		
+		ProducerRecord producerRecord = new ProducerRecord("mozixreality", "name", "ya");
+		KafkaProducer kafkaProducer = new KafkaProducer(properties);
+		
+		kafkaProducer.send(producerRecord);
+		kafkaProducer.close();
+	}
+}
